@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+/* style menu*/
+#menu{
+    margin: 0px auto;
+    width: 1200px;
+}
+#menu>ul>li{
+    display: block;
+    position: relative;
+    float: left;
+}
+.checkbox+input{
+    display: none;
+}
+#menu ul ul li  a{
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.checkbox+input+ul {
+    display: none;
+    position: absolute;
+    top: 84%;
+    left: 0;
+}
+.checkbox{
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    height: 40px;
+    width: 164px;
+    line-height: 40px;
+    background: #2FA1B3;
+    border-left: 1px solid gray;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.checkbox+input+ul li{
+    background: rgb(85, 171, 185);
+    width: 200px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+.checkbox+ul li a{
+    color: black; 
+}
+.checkbox+input:checked+ul{
+    display: block;
+    z-index: 3;
+}
+/* switch*/
+#switch{
+    display: block;
+
+}
+label.checkbox_switch{
+    background: #21d200;
+    display: inline-block;
+    width: 300px;
+    height: 120px;
+    position: relative;
+    border-radius: 100px;
+    border: 1px solid #19a000;
+}
+label.checkbox_switch input {
+    display: none;
+}
+label.checkbox_switch span{
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    top: 10px;
+    
+}
+label.checkbox_switch input:checked +span{
+    right: 10px;
+    background: red;
+
+}
+/* tab -switch*/
+div#main-tab > input {
+	opacity: 0;
+}
+
+div#main-tab label {
+	width: 100px;
+	height: 50px;
+	background-color: #1eca40;
+	display: inline-block;
+	text-align: center;
+	border-radius: 25px;
+	padding-top: 15px;
+}
+
+div#main-tab {
+	border: 1px solid #15e01d;
+	margin: 50px auto;
+	width: 520px;
+	height: 387px;
+	padding: 20px;
+	border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+div#main-tab > div {
+	display: none;
+	width: 342px;
+	height: 200px;
+	top: 80px;
+	left: 20px;
+	position: absolute;
+	background-color: #ebebeb;
+}
+div#main-tab > input:checked + div {
+    display: inline-block;
+   
+}
+
